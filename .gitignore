@@ -1,0 +1,19 @@
+environment.ts
+
+# Dependency directories
+node_modules/
+
+# User-specific stuff
+.idea/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+
+### macOS ###
+# General
+.DS_Store
+
+# iCloud generated files
+*.icloud
