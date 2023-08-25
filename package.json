@@ -6,5 +6,6 @@
     "tsc": "tsc main.ts"
   },
   "dependencies": {
+    "firebase": "^10.3.0"
   }
 }
