@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Gosha Sans Bold";
+    src: url('font/PPGoshaSans-Bold.eot');
+    src: url('font/PPGoshaSans-Bold.eot') format('embedded-opentype'),
+    url('font/PPGoshaSans-Bold.woff2') format('woff2'),
+    url('font/PPGoshaSans-Bold.woff') format('woff'),
+    url('font/PPGoshaSans-Bold.ttf') format('truetype');
+}
+
+h1, h2, h3 {
+    font-family: "Gosha Sans Bold";
+    color: #FF772C;
+}
+
+span, p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.jet-orange {
+    color: #FF772C;
+}
+
+.jet-black {
+    color: #222628;
+}

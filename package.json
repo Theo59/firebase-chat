@@ -1,0 +1,10 @@
+{
+  "name": "firebase-chat",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "",
+    "tsc": "tsc main.ts"
+  },
+  "dependencies": {
+  }
+}
