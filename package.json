@@ -2,9 +2,14 @@
   "name": "firebase-chat",
   "version": "1.0.0",
   "scripts": {
-    "start": "",
-    "tsc": "tsc main.ts"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
   }
 }
