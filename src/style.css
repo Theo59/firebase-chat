@@ -77,3 +77,19 @@ span, p {
     }
 }
 
+.chat-container #messages {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.chat-message-bubble {
+    display: inline-block;
+    font-size: 14px;
+    background: #222628;
+    padding: 8px 14px;
+    border-radius: 18px;
+    min-width: 0;
+    color: white;
+    margin-bottom: 24px;
+}
