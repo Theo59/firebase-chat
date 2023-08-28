@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { environment } from './environment';
+import { environment } from '../environment';
 
 // Your web app's Firebase configuration
 const firebaseConfig = environment.firebaseConfig;
