@@ -1,17 +1,30 @@
 import { initializeApp } from "firebase/app";
-import { environment } from './environment';
+import { environment } from '../environment';
+import { getDatabase, ref, set } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = environment.firebaseConfig;
 
 // Initialize Firebase
 initializeApp(firebaseConfig);
+const db = getDatabase();
 
 const listenMessageForm = () => {
-    document.getElementById('send-message-form')?.addEventListener('submit', () => {
+    const formEl: HTMLFormElement = document.getElementById('send-message-form')
+    formEl?.addEventListener('submit', (e) => {
+        e.preventDefault();
         const input: HTMLInputElement | null = document.getElementById('send-message-input');
         const inputValue = input?.value;
-        alert(inputValue);
+        const date = new Date().getTime();
+
+        set(ref(db, `messages/${date}`), {
+            date: date,
+            message: inputValue,
+        })
+            .then(() => formEl.reset())
+            .catch(e => {
+            console.log(e);
+        })
     });
 }
 
