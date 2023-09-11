@@ -13,7 +13,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100vw;
 }
 
@@ -37,7 +36,7 @@ span, p {
 
 .chat-container {
     width: 60%;
-    height: 70%;
+    min-height: 70%;
     border: 1px solid #222628;
     display: flex;
     flex-direction: column;
@@ -83,6 +82,12 @@ span, p {
     padding: 24px;
 }
 
+.chat-message-bubble-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
 .chat-message-bubble {
     display: inline-block;
     font-size: 14px;
@@ -92,4 +97,18 @@ span, p {
     min-width: 0;
     color: white;
     margin-bottom: 24px;
+    align-self: flex-start;
+}
+
+.my-messages {
+    display: flex;
+    align-self: flex-end;
+}
+
+.my-messages .chat-message-bubble {
+    background-color: #FF772C;
+}
+
+.nickname {
+    font-size: 10px;
 }
