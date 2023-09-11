@@ -3,6 +3,13 @@ environment.ts
 # Dependency directories
 node_modules/
 
+# build
+dist/
+
+# Firebase
+.firebase/
+
+
 # User-specific stuff
 .idea/workspace.xml
 .idea/**/tasks.xml
