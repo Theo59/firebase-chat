@@ -1,6 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { environment } from '../environment';
 import { getDatabase, onValue, ref, set } from 'firebase/database';
+import { getAuth } from "firebase/auth";
 
 interface Message {
     user: string;
@@ -13,7 +14,9 @@ const firebaseConfig = environment.firebaseConfig;
 
 // Initialize Firebase
 initializeApp(firebaseConfig);
+
 const db = getDatabase();
+const auth = getAuth();
 
 let nickname: string = '';
 const listenMessageForm = () => {
