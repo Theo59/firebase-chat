@@ -34,23 +34,24 @@ span, p {
     color: #222628;
 }
 
-.chat-container {
+#chat-container {
     width: 60%;
-    min-height: 70%;
+    height: 600px;
+    overflow-y: auto;
     border: 1px solid #222628;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.chat-container .send-message {
+#chat-container .send-message {
     display: flex;
-    padding: 24px;
+    padding: 0 24px 24px 24px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.chat-container .send-message input {
+#chat-container .send-message input {
     outline: none;
     padding: 12px;
     border: 1px solid #747474;
@@ -60,7 +61,7 @@ span, p {
     flex: 1;
 }
 
-.chat-container .send-message button {
+#chat-container .send-message button {
     padding: 12px 18px;
     border: none;
     background-color: #FF772C;
@@ -76,7 +77,7 @@ span, p {
     }
 }
 
-.chat-container #messages {
+#chat-container #messages {
     display: flex;
     flex-direction: column;
     padding: 24px;
